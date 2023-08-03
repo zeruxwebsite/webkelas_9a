@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>9A Profile</title>
+</head>
+<body>
+  <nav>
+    <ul class="uL">
+      <li>
+        <a href="#" class="active">
+          <label class="textNav">Home</label>
+        </a>
+      </li>
+      <li>
+        <a href="/laina">
+          <label class="textNav">Organisasi kelas</label>
+        </a>
+      </li>
+      <li>
+        <a href="lainb">
+          <label class="textNav">Struktur kelas</label>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <label class="textNav">Foto random</label>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="content">
+  <div class="wadahWelcome">
+    <p class="textW">Welcome to our class</p>
+    <img class="imgWelcome" src="logo.png" alt="" />
+    <br>
+    <div class="typing-text">
+    <h2 class="judul">We are 9A<h2>
+    </div>
+      <p class="sub">Kami dari angkatan 2023/2024,<br>Instagram kami <a class="ig" href="#">@class_9a_10</a><br> follow for more foto random  atau info lainnya</p>
+  </div>
+  <footer>
+    <p align="center">
+      Made by Justin <br />
+      <a href="https://zeruxwebsite.zeru-program.repl.co">©zerux</a> 2023 copyright all reversed.
+    </p>
+  </footer>
+  </div>
+  <script type="text/javascript" charset="utf-8">
+  const navLinks = document.querySelectorAll('nav a');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    navLinks.forEach(navLink => {
+      navLink.classList.remove('active');
+    });
+    link.classList.add('active');
+  });
+});
+  </script>
+</body>
+    </html
