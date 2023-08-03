@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@400;700&family=Kanit&family=Tilt+Prism&display=swap");
+
+/* toper */
+body {
+  background: rgb(245,142,92);
+background: linear-gradient(90deg, rgba(245,142,92,1) 0%, rgba(255,209,21,1) 43%, rgba(254,255,110,1) 100%);
+  background-size: 300%;
+  animation: bg 25s infinite alternate;
+  font-family: "Kanit", Sans-Serif;
+  font-family: "Kanit", Sans-Serif;
+}
+@keyframes bg {
+  0% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+/* isian */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  background: #ffffff82;
+  border-radius: 10px;
+  box-shadow: 0 0 2px whitesmoke;
+}
+nav a.active{
+  border-bottom: 3px solid #2a2a2a;
+  transition: 0.4s;
+}
+nav a:active{
+  border-bottom: 3px solid #2a2a2a;
+  transition: 0.4s;
+}
+a {
+  text-decoration: none;
+}
+.uL {
+  display: flex;
+  gap: 25px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.textNav {
+  transition: 0.1s;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+.wadahWelcome {
+  display: flex;
+  flex-direction: column;
+  animation: pudar 3s;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+@keyframes pudar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.textW {
+  color: #f95a37;
+  text-align: center;
+  font-weight: 500;
+  font-size: 5rem;
+  font-family: "Bebas Neue", Sans-Serif;
+  letter-spacing: 1px;
+  border-bottom: 2px solid black;
+  animation: besarKecil 1s alternate infinite;
+}
+@keyframes besarKecil {
+  from {
+    transform: scale(1);
+    color: #fcf1d8;
+  }
+  to {
+    transform: scale(1.1);
+    color: #f95a37;
+  }
+}
+.imgWelcome {
+  position: relative;
+  top: -50px;
+  animation: Besar 3s;
+  width: 600px;
+  text-align: center;
+}
+@keyframes Besar{
+  from{
+    transform: scale(0.8);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+.judul{
+  position: relative;
+  color: #ff4343;
+  font-size: 2rem;
+  left: -350px;
+}
+.typing-text h2 {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #000; /* Garis teks yang 'diketik' */
+  animation: typing 2s steps(35, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #000; }
+}
+
+.sub{
+  color: black;
+  position: relative;
+  font-size: 1rem;
+  left: -500px;
+}
+.ig{
+  color: black;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  background: white;
+}
+/* media hp */
+@media screen and (max-width: 568px) {
+  nav {
+    font-size: 1em;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 1em;
+  }
+  .textNav {
+    font-size: .8em;
+    padding: 0;
+  }
+  .textW {
+    font-size: 1.5em;
+  }
+  .imgWelcome {
+    top: -50px;
+    width: 300px;
+  }
+  .judul{
+    font-size: 2em;
+    left: -130px;    
+  }
+  .sub{
+    left: -70px;
+    top: -50px;
+    font-size: .8em;
+  }
+}
